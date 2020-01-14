@@ -1,0 +1,24 @@
+{% extends "base.html" %}
+{% load crispy_forms_tags %}
+<h1>
+Result View
+</h1>
+
+{% block content %}
+  <h1>
+    Result View
+  </h1>
+  <br>
+  <h4>
+    {{ student.first_name }}
+  </h4>
+  <br>
+  <br>
+  {% for m in mark %}
+          <h6>{{ m.subject_id }} ---------> {{ m.marks }}</h6>
+
+  {% endfor %}
+  {{ total }}
+
+
+{% endblock content %}
