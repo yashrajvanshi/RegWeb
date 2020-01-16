@@ -25,6 +25,5 @@ urlpatterns = [
     path('home/result',result_view, name = 'result'),
     path('home/topper-result',topper_view, name = 'topper-result'), 
     path('api/',include('Api.urls'),name='api'),
-    path('api/',include('Api.urls'),name='api'),
     
 ]
